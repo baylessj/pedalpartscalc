@@ -1,12 +1,12 @@
 #[macro_use]
 extern crate rocket;
-// #[macro_use] std::fmt;
 
 mod parts;
 
 #[get("/")]
 fn index() -> String {
-    format!("Parts {:?}", parts::create_example_parts_list())
+    // format!("Parts {:?}", parts::create_example_parts_list())
+    "Hello World!".to_string()
 }
 
 #[launch]
